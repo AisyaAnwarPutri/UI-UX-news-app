@@ -43,8 +43,14 @@ class _BottomNavState extends State<BottomNav> {
         items: _navBarList
             .map(
               (e) => BottomNavigationBarItem(
-                icon: SvgPicture.asset(e.icon),
-                activeIcon: SvgPicture.asset(e.activeIcon),
+                icon: SvgPicture.asset(
+                  e.icon,
+                  width: 24.0,
+                ),
+                activeIcon: SvgPicture.asset(
+                  e.activeIcon,
+                  width: 24.0,
+                ),
                 // ignore: deprecated_member_use
                 title: Text(e.title),
               ),
