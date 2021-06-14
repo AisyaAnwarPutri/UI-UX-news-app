@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/constants.dart';
-import 'package:news_app/views/popular_tab_view.dart';
-import 'package:news_app/views/recent_tab_view.dart';
-import 'package:news_app/views/trending_tab_view.dart';
+import 'popular_tab_view.dart';
+import 'recent_tab_view.dart';
+import 'trending_tab_view.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -23,7 +21,7 @@ class HomeView extends StatelessWidget {
                   style: kNonActiveTabStyle,
                 ),
                 subtitle: Text(
-                  "JESSICA VERANDA",
+                  "Jessica Veranda",
                   textAlign: TextAlign.end,
                   style: kActiveTabStyle,
                 ),
@@ -50,18 +48,12 @@ class HomeView extends StatelessWidget {
                   indicatorColor: Colors.white,
                   labelStyle: kActiveTabStyle.copyWith(fontSize: 25.0),
                   tabs: [
-                    Tab(
-                      text: "Popular",
-                    ),
-                    Tab(
-                      text: "Trending",
-                    ),
-                    Tab(
-                      text: "Recent",
-                    )
+                    Tab(text: "Popular"),
+                    Tab(text: "Trending"),
+                    Tab(text: "Recent"),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
