@@ -3,6 +3,9 @@ import 'package:news_app/models/news.dart';
 import 'package:news_app/constants.dart';
 
 class PrimaryCard extends StatelessWidget {
+  final News news;
+  PrimaryCard({this.news});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +28,7 @@ class PrimaryCard extends StatelessWidget {
                 width: 10.0,
               ),
               Text(
-                News.category,
+                news.category,
                 style: kCategoryTitle,
               )
             ],
