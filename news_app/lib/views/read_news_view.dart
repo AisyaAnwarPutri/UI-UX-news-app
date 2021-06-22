@@ -8,7 +8,6 @@ class ReadNewsView extends StatelessWidget {
   ReadNewsView({this.news});
   @override
   Widget build(BuildContext context) {
-    var descriptionStyle;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
@@ -70,10 +69,13 @@ class ReadNewsView extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      CircleAvatar(radius: 5.0, backgroundColor: kGrey3),
+                      CircleAvatar(
+                        radius: 5.0,
+                        backgroundColor: kGrey3,
+                      ),
                       SizedBox(width: 6.0),
                       Text(
-                        news.category,
+                        news.category.name,
                         style: kCategoryTitle,
                       ),
                     ],

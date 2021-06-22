@@ -27,7 +27,10 @@ var kCategoryTitle = GoogleFonts.roboto(
 );
 
 var kDetailContent = GoogleFonts.roboto(
-  textStyle: TextStyle(fontSize: 14.0, color: kGrey2),
+  textStyle: TextStyle(
+    fontSize: 10.0,
+    color: kGrey2,
+  ),
 );
 
 var kTitleCard = GoogleFonts.roboto(
@@ -37,3 +40,9 @@ var kTitleCard = GoogleFonts.roboto(
     fontWeight: FontWeight.bold,
   ),
 );
+
+var descriptionStyle = GoogleFonts.roboto(
+    textStyle: TextStyle(
+  fontSize: 15.0,
+  height: 2.0,
+));
